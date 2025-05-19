@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReactJS - Examples</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .react-examples {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      min-height: 100dvh;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .underline-animation::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--base);
+      transition: transform 0.25s ease-out;
+      transform-origin: bottom left;
+    }
+
+    .underline-animation:hover::after {
+      transform: scaleX(1);
+    }
+
+    menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 400px;
+      padding: 2rem;
+    }
+    menu li {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      text-align: left;
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    menu li a {
+      display: inline-flex;
+      font-size: 2rem;
+      color: var(--white);
+      text-decoration: none;
+      width: 100%;
+      padding: 1rem 0.5rem 0.25rem;
+    }
+  </style>
+  <style media="all and (max-width: 479px)">
+    menu {
+      min-width: auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="home-nav">
+      <a href="./index.html">home &#8962;</a>
+    </nav>
+    <header class="title">
+      <h1>React Examples</h1>
+    </header>
+    <div class="content">
+      <section class="react-examples">
+        <menu>
+          <li class="underline-animation"><a href="https://jay-davis.co.uk/react-projects/timer-challenge/index.html" target="_blank" rel="noopener noreferrer">
+            Timer Challenge &boxbox;
+          </a></li>
+          <li class="underline-animation"><a href="https://jay-davis.co.uk/react-projects/investment-calculator/" target="_blank" rel="noopener noreferrer">
+            Investment Calculator &boxbox;
+          </a></li>
+          <li class="underline-animation"><a href="https://jay-davis.co.uk/react-projects/Tic-Tac-Toe/index.html" target="_blank" rel="noopener noreferrer">
+            Tic-Tac-Toe &boxbox;
+          </a></li>
+          <li class="underline-animation"><a href="https://jay-davis.co.uk/react-projects/styled-components/index.html" target="_blank" rel="noopener noreferrer">
+            Styled Components &boxbox;
+          </a></li>
+        </menu>
+      </section>
+    </div>
+    
+  </main>
+  <footer>
+    <p>
+      Jay Davis ©2025 | 
+      <small>Close button Designed by <a href="https://www.freepik.com" target="_blank">Freepik</a></small>
+    </p>
+  </footer>
+</body>
+</html>
